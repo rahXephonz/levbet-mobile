@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		4F265F6CABFCE339E9AC8EDF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2150825DBEA039FBE117A37E /* PrivacyInfo.xcprivacy */; };
-		60222CEB5B4A9716F91F8AC7 /* libPods-Levbet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD7B371AA13DB91F1F9E33F /* libPods-Levbet.a */; };
+		B8AB97C9EA7F4DA42EB8CBCF /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A54CAAEFAD56C0D55B4CE /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		EBCB91FAE6B7FE70D0DE976C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB5C7A5FA8172D9136C2D89 /* ExpoModulesProvider.swift */; };
+		C16321C1C04F9EB3ED0635A1 /* libPods-Levbet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62364C5931187EEFE8A0AB73 /* libPods-Levbet.a */; };
+		CD577D7D97421CE17FAF9F02 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 398ED7CA93862F4FF648F104 /* PrivacyInfo.xcprivacy */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C484F6F36F12F09E5E9678 /* Pods-Levbet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levbet.debug.xcconfig"; path = "Target Support Files/Pods-Levbet/Pods-Levbet.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Levbet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levbet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Levbet/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Levbet/Info.plist; sourceTree = "<group>"; };
-		179D0D5C39C8362993E2ACF6 /* Pods-Levbet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levbet.release.xcconfig"; path = "Target Support Files/Pods-Levbet/Pods-Levbet.release.xcconfig"; sourceTree = "<group>"; };
-		2150825DBEA039FBE117A37E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Levbet/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		7CD7B371AA13DB91F1F9E33F /* libPods-Levbet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Levbet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FB5C7A5FA8172D9136C2D89 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Levbet/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		398ED7CA93862F4FF648F104 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Levbet/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		40604D39C7BAD1329E7F3E3B /* Pods-Levbet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levbet.release.xcconfig"; path = "Target Support Files/Pods-Levbet/Pods-Levbet.release.xcconfig"; sourceTree = "<group>"; };
+		62364C5931187EEFE8A0AB73 /* libPods-Levbet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Levbet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Levbet/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		EB2A54CAAEFAD56C0D55B4CE /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Levbet/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F0FA6C58B27236F6F0A26F74 /* Pods-Levbet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levbet.debug.xcconfig"; path = "Target Support Files/Pods-Levbet/Pods-Levbet.debug.xcconfig"; sourceTree = "<group>"; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Levbet/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* Levbet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Levbet-Bridging-Header.h"; path = "Levbet/Levbet-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60222CEB5B4A9716F91F8AC7 /* libPods-Levbet.a in Frameworks */,
+				C16321C1C04F9EB3ED0635A1 /* libPods-Levbet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,15 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				2150825DBEA039FBE117A37E /* PrivacyInfo.xcprivacy */,
+				398ED7CA93862F4FF648F104 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Levbet;
+			sourceTree = "<group>";
+		};
+		1BF10CB2F12E4B22A72878F5 /* Levbet */ = {
+			isa = PBXGroup;
+			children = (
+				EB2A54CAAEFAD56C0D55B4CE /* ExpoModulesProvider.swift */,
 			);
 			name = Levbet;
 			sourceTree = "<group>";
@@ -62,35 +70,17 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7CD7B371AA13DB91F1F9E33F /* libPods-Levbet.a */,
+				62364C5931187EEFE8A0AB73 /* libPods-Levbet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		36B73EC9F163B29E7724933E /* ExpoModulesProviders */ = {
+		3FB184EC2D9124D1B9C87CA4 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				4CCAD3972CC08CD7333621A1 /* Levbet */,
+				1BF10CB2F12E4B22A72878F5 /* Levbet */,
 			);
 			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
-		4CCAD3972CC08CD7333621A1 /* Levbet */ = {
-			isa = PBXGroup;
-			children = (
-				8FB5C7A5FA8172D9136C2D89 /* ExpoModulesProvider.swift */,
-			);
-			name = Levbet;
-			sourceTree = "<group>";
-		};
-		71E422ACC9C705632D00C3B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F0FA6C58B27236F6F0A26F74 /* Pods-Levbet.debug.xcconfig */,
-				179D0D5C39C8362993E2ACF6 /* Pods-Levbet.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -107,8 +97,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				71E422ACC9C705632D00C3B2 /* Pods */,
-				36B73EC9F163B29E7724933E /* ExpoModulesProviders */,
+				EE6E0979CB3097589C359B64 /* Pods */,
+				3FB184EC2D9124D1B9C87CA4 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -132,6 +122,16 @@
 			path = Levbet/Supporting;
 			sourceTree = "<group>";
 		};
+		EE6E0979CB3097589C359B64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04C484F6F36F12F09E5E9678 /* Pods-Levbet.debug.xcconfig */,
+				40604D39C7BAD1329E7F3E3B /* Pods-Levbet.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Levbet" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				B2368EB874044C2BA8B9F8ED /* [Expo] Configure project */,
+				D742C8FAD2F6AE9509CFEBEE /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				295F58EDE6FCB51FAD1BD16E /* [CP] Embed Pods Frameworks */,
+				9CCC14EE3DF2980D0D5785F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				4F265F6CABFCE339E9AC8EDF /* PrivacyInfo.xcprivacy in Resources */,
+				CD577D7D97421CE17FAF9F02 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,24 +240,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		295F58EDE6FCB51FAD1BD16E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Levbet/Pods-Levbet-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Levbet/Pods-Levbet-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +274,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Levbet/Pods-Levbet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2368EB874044C2BA8B9F8ED /* [Expo] Configure project */ = {
+		9CCC14EE3DF2980D0D5785F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Levbet/Pods-Levbet-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Levbet/Pods-Levbet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D742C8FAD2F6AE9509CFEBEE /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -319,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				EBCB91FAE6B7FE70D0DE976C /* ExpoModulesProvider.swift in Sources */,
+				B8AB97C9EA7F4DA42EB8CBCF /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +328,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0FA6C58B27236F6F0A26F74 /* Pods-Levbet.debug.xcconfig */;
+			baseConfigurationReference = 04C484F6F36F12F09E5E9678 /* Pods-Levbet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -364,7 +364,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 179D0D5C39C8362993E2ACF6 /* Pods-Levbet.release.xcconfig */;
+			baseConfigurationReference = 40604D39C7BAD1329E7F3E3B /* Pods-Levbet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
