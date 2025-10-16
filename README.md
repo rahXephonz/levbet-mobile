@@ -18,14 +18,12 @@ Developer experience first:
 - 🤡 Unit Testing with Jest
 - 💡 Absolute Imports using `@` prefix
 
-### Last Boilerplate Update
+### Last Update
 
 - ⚡ Expo SDK 53 (Including Expo Router 3.5, Expo UI...) + update all libraries
 - ⚛️ React Native 0.79 (Including New Arch, Android Edge-to-Edge...)
 - 💎 NativeWind 4.0
 - 🥟 Bun
-
-![](https://res.cloudinary.com/dw3mwclgk/image/upload/v1748011077/UPDATE.png)
 
 ### Requirements
 
