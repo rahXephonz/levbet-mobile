@@ -3,6 +3,7 @@
 import "react-native-get-random-values";
 import "@ethersproject/shims";
 import { Buffer } from "buffer";
+import { AppState } from "react-native";
 
 // Make Buffer globally available
 if (typeof global.Buffer === "undefined") {
@@ -12,7 +13,7 @@ if (typeof global.Buffer === "undefined") {
 // Polyfill for process
 if (typeof process === "undefined") {
   (global as any).process = {
-    env: {},
+    env: { NODE_ENV: "production" },
     nextTick: (fn: Function, ...args: any[]) => {
       setTimeout(() => fn(...args), 0);
     },
@@ -25,6 +26,9 @@ if (typeof process === "undefined") {
     process.nextTick = (fn: Function, ...args: any[]) => {
       setTimeout(() => fn(...args), 0);
     };
+  }
+  if (!process.env) {
+    process.env = { NODE_ENV: "production" } as any;
   }
 }
 
@@ -43,8 +47,19 @@ if (typeof global.crypto === "undefined") {
   };
 }
 
+// Polyfill for Application module (used by some WalletConnect dependencies)
+if (typeof (global as any).Application === "undefined") {
+  (global as any).Application = {
+    addEventListener: AppState.addEventListener.bind(AppState),
+    currentState: AppState.currentState,
+    // @ts-ignore
+    removeEventListener: AppState.removeEventListener?.bind(AppState),
+  };
+}
+
 console.log("Polyfills loaded successfully");
 console.log("Buffer:", typeof global.Buffer !== "undefined");
 console.log("Process:", typeof process !== "undefined");
+console.log("Process.env:", typeof process.env !== "undefined");
 console.log("TextEncoder:", typeof global.TextEncoder !== "undefined");
 console.log("Crypto:", typeof global.crypto !== "undefined");

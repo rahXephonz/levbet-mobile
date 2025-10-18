@@ -27,7 +27,7 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>myapp</string>
+          <string>levbet</string>
           <string>com.levbet.ios</string>
         </array>
       </dict>

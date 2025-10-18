@@ -11,6 +11,7 @@ import "react-native-reanimated";
 import "../global.css";
 
 import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { WalletConnectModal } from "@walletconnect/modal-react-native";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
 
@@ -18,6 +19,16 @@ export { ErrorBoundary } from "expo-router";
 
 export const unstable_settings = {
   initialRouteName: "(tabs)",
+};
+
+const projectId = "a7bbe07d0c12a3b72df2a72d5d34c28b";
+
+const providerMetadata = {
+  description: "Levbet Trading App",
+  icons: ["https://levbet.com/icon.png"],
+  name: "Levbet",
+  redirect: { native: "levbet://" },
+  url: "https://levbet.com",
 };
 
 SplashScreen.preventAutoHideAsync();
@@ -69,6 +80,8 @@ function RootLayoutNav() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ presentation: "modal" }} />
         </Stack>
+
+        <WalletConnectModal projectId={projectId} providerMetadata={providerMetadata} />
       </QueryClientProvider>
     </ThemeProvider>
   );
