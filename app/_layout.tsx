@@ -1,36 +1,34 @@
-import { useEffect } from "react";
+import "../polyfills";
+
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
+import { useEffect, useRef } from "react";
 import { useColorScheme } from "nativewind";
 import * as SplashScreen from "expo-splash-screen";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { transformToCamelCase } from "transform-obj";
 import "react-native-reanimated";
 
 import "../global.css";
 
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
 
-export {
-  // Catch any errors thrown by the Layout component.
-  ErrorBoundary,
-} from "expo-router";
+export { ErrorBoundary } from "expo-router";
 
-export let unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
+export const unstable_settings = {
   initialRouteName: "(tabs)",
 };
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  let [loaded, error] = useFonts({
+  const [loaded, error] = useFonts({
     "aeonik-bold": require("../assets/fonts/aeonik-bold.ttf"),
     "aeonik-regular": require("../assets/fonts/aeonik-regular.ttf"),
     ...FontAwesome.font,
   });
 
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
     if (error) throw error;
   }, [error]);
@@ -49,14 +47,29 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
-  let { colorScheme } = useColorScheme();
+  const { colorScheme } = useColorScheme();
+  const queryClientRef = useRef<QueryClient | null>(null);
+
+  if (!queryClientRef.current) {
+    queryClientRef.current = new QueryClient({
+      defaultOptions: {
+        queries: {
+          refetchOnWindowFocus: false,
+          retry: 0,
+          select: data => transformToCamelCase(data),
+        },
+      },
+    });
+  }
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: "modal" }} />
-      </Stack>
+      <QueryClientProvider client={queryClientRef.current}>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="modal" options={{ presentation: "modal" }} />
+        </Stack>
+      </QueryClientProvider>
     </ThemeProvider>
   );
 }
